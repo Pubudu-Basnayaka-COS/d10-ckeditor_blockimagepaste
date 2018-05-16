@@ -1,0 +1,1 @@
+CKEditor block image paste
