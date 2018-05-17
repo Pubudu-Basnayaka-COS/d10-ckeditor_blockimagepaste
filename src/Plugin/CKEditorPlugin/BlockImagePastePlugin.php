@@ -38,10 +38,7 @@ class BlockImagePastePlugin extends PluginBase implements CKEditorPluginContextu
    */
   public function isEnabled(Editor $editor) {
     $settings = $editor->getSettings();
-    if (isset($settings['plugins']['blockimagepaste']['block_image_paste_enabled']) && $settings['plugins']['blockimagepaste']['block_image_paste_enabled'] === 1) {
-      return TRUE;
-    }
-    return FALSE;
+    return !empty($settings['plugins']['blockimagepaste']['block_image_paste_enabled']);
   }
 
   /**
@@ -74,7 +71,7 @@ class BlockImagePastePlugin extends PluginBase implements CKEditorPluginContextu
     $form['block_image_paste_enabled'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Block image paste enabled'),
-      '#default_value' => isset($settings['plugins']['blockimagepaste']['block_image_paste_enabled']) ? $settings['plugins']['blockimagepaste']['block_image_paste_enabled'] : '',
+      '#default_value' => !empty($settings['plugins']['blockimagepaste']['block_image_paste_enabled']),
       '#description' => $this->t('Prevent users from pasting images in the editor.'),
     ];
 
