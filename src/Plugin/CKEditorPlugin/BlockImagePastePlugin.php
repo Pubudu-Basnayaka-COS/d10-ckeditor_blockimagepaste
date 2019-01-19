@@ -8,7 +8,6 @@ use Drupal\ckeditor\CKEditorPluginContextualInterface;
 use Drupal\ckeditor\CKEditorPluginConfigurableInterface;
 use Drupal\editor\Entity\Editor;
 
-
 /**
  * Defines the "blockimagepaste" plugin.
  *
