@@ -4,3 +4,4 @@ description: 'Provides a test page with an image to copy paste.'
 package: Testing
 version: VERSION
 core: 8.x
+core_version_requirement: ^8 || ^9
