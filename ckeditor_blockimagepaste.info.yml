@@ -2,8 +2,7 @@ name: CKEditor Block Image Paste
 type: module
 description: "Adds a plugin which blocks image pasting."
 package: CKEditor
-core: 8.x
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9.3 || ^10
 dependencies:
   - drupal:ckeditor
   - drupal:editor

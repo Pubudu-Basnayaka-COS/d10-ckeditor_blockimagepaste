@@ -58,7 +58,7 @@ class BlockImagePastePlugin extends PluginBase implements CKEditorPluginContextu
    * {@inheritdoc}
    */
   public function getFile() {
-    return drupal_get_path('module', 'ckeditor_blockimagepaste') . '/js/plugin.js';
+    return \Drupal::service('extension.list.module')->getPath('ckeditor_blockimagepaste') . '/js/plugin.js';
   }
 
   /**
