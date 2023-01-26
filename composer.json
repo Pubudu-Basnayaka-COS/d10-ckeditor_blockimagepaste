@@ -1,0 +1,6 @@
+{
+    "name": "drupal/ckeditor_blockimagepaste",
+    "description": "block imagepaste module",
+    "type": "drupal-module",
+    "license": "GPL-2.0+"
+}
